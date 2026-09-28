@@ -1,0 +1,27 @@
+Preguntas 
+
+1- Explica dos diferencias entre una API REST y un servidor GraphQL :
+- Una API REST consta de 4 endpoints fijos (crear, consultar, editar, eliminar) , mientras que GraphQL utiliza uno solo
+el el cual el usuario especifica lo que desea consultar.
+- En API REST se define la estructura exacta de la respuesta devuelva por lo que puede ocasionar over-fetching o under-fetching 
+que se refieren a la pérdida o sobrecarga de datos, en GraphQL el usuario determina la estructura y datos que desea obtener.
+
+2- Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL:
+- Conviene usar REST para servicios simples con operaciones CRUD estandar.
+- Conviene usar GrapQL en aplicaciones complejas que tiene múltiples clientes para agilizar múltiples solicitudes en una sola.
+
+3- ¿Qué diferencia hay entre una imagen y un contenedor? Una imagen es una plantilla estática, 
+de sólo lectura que contiene el código, librerías y dependencias; mientras que un contenedor es una instancia 
+en ejecución de esa imagen, un proceso aislado que cuneta vcon su propio entorno de ejecución.
+¿Qué papel cumple el Dockerfile en esa relación? El Dockerfile es el archivo de texto con las instrucciones paso a paso
+que especifican cómo construir la imagen a partir del código base y sus dependencias.
+
+4- ¿Para qué sirve Docker Compose? Sirve para definir y ejecutar aplicaciones Docker multi-contenedor 
+mediante un archivo YAML, esto es fácil para levantar toda la infraestructura con un solo comando.
+En el mapeo 8000:8000 ¿qué representa el primer 8000 y qué representa el segundo? El primer puerto 8000 representa el que ocupa el anfitrión y el segundo
+representa el puerto del contenedor.
+
+5-¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? Para poder asegurar la persistencia de estos datos,
+evitando que la información se pierda al apagar, reiniciar o actualizar la aplicación o el contenedor.
+¿Qué identifica la llave primaria id? Identifica de manera única a cada elemento de la base de datos para evitar confusiones, duplicados, etc.
+Esta llave es la que nos ayuda a poder identificar y referenciar cada uno de ellos de manera eficiente y única.
