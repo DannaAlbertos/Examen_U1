@@ -1,7 +1,11 @@
-from pydantic import BaseModel
+from sqlalchemy import Column, Integer, String, Boolean
+from database import Base
 
+class LaptopModel(Base):
+    __tablename__ = "laptops"
 
-class Laptops(BaseModel):
-    nombre: str
-
-
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    marca = Column(String(100), nullable=False)
+    modelo = Column(String(100), nullable=False)
+    ram_gb = Column(Integer, nullable=False)
+    disponible = Column(Boolean, default=True, nullable=False)
